@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <form action="/action_page.php" method="post">
+        <fieldset id="personal">
+            <legend>Personal information:</legend>
+            *Name:<br /> <input type="text" name="firstname" placeholder="Firstname" required><br />
+            *Surname:<br /><input type="text" name="surname" placeholder="Surname" required><br />
+            *E-mail:<br /><input type="email" placeholder="E-mail" required><br />
+
+            <input type="radio" name="gender" value="male" checked> Male<br />
+            <input type="radio" name="gender" value="female"> Female<br />
+        </fieldset>
+        Method of transport:<br />
+        Car <input type="checkbox" value="Car" name="transport">
+        Bike <input type="checkbox" value="Bike" name="transport">
+        Bus <input type="checkbox" value="Bus" name="transport">
+        Train <input type="checkbox" value="Train" name="transport">
+        Metro <input type="checkbox" value="Metro" name="transport">
+        Walk <input type="checkbox" value="Walk" name="transport"><br />
+        <fieldset id="lang">
+            <legend>Languages</legend>
+            Dutch:<br />
+            Poor<input type="radio" name="Dutch" value="Poor" checked>
+            Good<input type="radio" name="Dutch" value="Good">
+            Excellent<input type="radio" name="Dutch" value="Excellent"><br /><br />
+            French:<br />
+            Poor<input type="radio" name="French" value="Poor" checked>
+            Good<input type="radio" name="French" value="Good">
+            Excellent<input type="radio" name="French" value="Excellent"><br /><br />
+            English:<br />
+            Poor<input type="radio" name="English" value="Poor" checked>
+            Good<input type="radio" name="English" value="Good">
+            Excellent<input type="radio" name="English" value="Excellent"><br />
+        </fieldset>
+        <br />
+        *Choose a course:<br />
+        <select name="course" required>
+            
+            <option value="Developer">Web Developer</option>
+            <option value="Java">Java Developer</option>
+            <option value="Network">Network Technician</option>
+            <option value="Database">Databases</option>
+        </select>
+        <br /><br />
+        Give a reason for attending the course (optional):<br />
+        <textarea name="message" rows="5" cols="53" placeholder="Why do you want to attend the course?"></textarea>
+        <br /><br />
+        <input type="submit" onclick="alert('Thank you for your interest! You will hear from us shortly.')"><input type="reset"><br />
+    </form>
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    * Required
+</body>
+
+</html>
